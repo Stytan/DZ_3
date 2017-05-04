@@ -43,8 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GreatPyramidOfGiza.cs" />
+    <Compile Include="LinearEqK.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Wonder.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

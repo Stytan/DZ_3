@@ -1,15 +1,17 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DZ_3
 {
     class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
+            LinearEqK LineEq1 = LinearEqK.Parse("12 10 -8");
+            LinearEqK LineEq2 = LinearEqK.Parse("66 18 1");
+            LinearEqK.WriteSolution(LineEq1, LineEq2);
+
+            Console.Write("Press any key to continue . . . ");
+            Console.ReadKey(true);
         }
     }
 }
