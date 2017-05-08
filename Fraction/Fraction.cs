@@ -155,19 +155,19 @@ namespace Fract
 		{
 			if (obj == null)
 				return false;
-			return obj.Numerator < obj.Denumerator;
+			return Math.Abs(obj.Numerator) < obj.Denumerator;
 		}
 		
 		public static bool operator false(Fraction obj)
 		{
 			if (obj == null)
 				return false;
-			return obj.Numerator >= obj.Denumerator;
+			return Math.Abs(obj.Numerator) >= obj.Denumerator;
 		}
 		
 		public static Fraction operator !(Fraction obj)
 		{
-			return new Fraction(-obj);
+			return -obj;
 		}
 		
 		public static bool operator >(Fraction left, Fraction right)

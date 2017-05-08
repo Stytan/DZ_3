@@ -2,9 +2,6 @@ using System;
 
 namespace Complex
 {
-	/// <summary>
-	/// Description of cmplx.
-	/// </summary>
 	public class cmplx
 	{
 		public double X { get; set; }
